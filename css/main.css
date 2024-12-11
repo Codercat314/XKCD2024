@@ -1,0 +1,36 @@
+body{
+    background-color: cornflowerblue;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+main{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+header{
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+}
+footer{
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+}
+li{
+    background-color: cornflowerblue;
+    color: white;
+    max-width: fit-content;
+    padding: 2px;
+    border-radius: 2px;
+    text-decoration: solid,black;
+    display: inline-block;
+    text-align: center;
+}
+#first{
+    margin-left: 30%;
+}
+img{
+    max-width: 100%;
+}
