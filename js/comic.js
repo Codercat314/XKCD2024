@@ -2,7 +2,10 @@
 var maxComic = -1;
 var currentComic = -1;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9334fac64f4dd2ca9432dac3bbe3fafe29313758
 window.onload = function(){
     //hämta senaste comic
     getComic('latest');
@@ -42,9 +45,14 @@ function getComic(which){
 }
 
 function appendComic(data){
+<<<<<<< HEAD
     let img = document.getElementById(theComic);
     img.alt = data.title;
     console.log(data.img);
     img.src = data.img;
     document.getElementById("linkTo").innerHTML = data.img;
 }
+=======
+    
+}
+>>>>>>> 9334fac64f4dd2ca9432dac3bbe3fafe29313758
