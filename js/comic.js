@@ -2,19 +2,37 @@
 var maxComic = -1;
 var currentComic = -1;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 9334fac64f4dd2ca9432dac3bbe3fafe29313758
 window.onload = function(){
     //hämta senaste comic
     getComic('latest');
+    
     //sätter funktionalitet för nav knappar
     document.getElementById('first').addEventListener('click',function(){
         if(currentComic!=1){
             getComic(1);
         }
     })
+    document.getElementById('rand').addEventListener('click',function(){
+        
+            getComic(Math.floor(Math.random() * maxComic-1) + 1);
+        
+    })
+    document.getElementById('prev').addEventListener('click',function(){
+        
+        getComic(currentComic-1);
+    
+    })
+    document.getElementById('next').addEventListener('click',function(){
+            
+        getComic(currentComic + 1);
+
+    })
+    document.getElementById('last').addEventListener('click',function(){
+        
+        getComic(maxComic);
+    
+})
 }
 
 function getComic(which){
@@ -45,14 +63,17 @@ function getComic(which){
 }
 
 function appendComic(data){
-<<<<<<< HEAD
-    let img = document.getElementById(theComic);
-    img.alt = data.title;
+    currentComic = data.num;
+    console.log(data.alt);
+    let img = document.getElementById("theComic");
+    img.alt = data.alt;
     console.log(data.img);
     img.src = data.img;
     document.getElementById("linkTo").innerHTML = data.img;
-}
-=======
+    document.getElementById("rubrik").innerHTML = data.title;
     
 }
->>>>>>> 9334fac64f4dd2ca9432dac3bbe3fafe29313758
+
+    
+
+
