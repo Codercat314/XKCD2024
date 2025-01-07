@@ -1,5 +1,5 @@
 body{
-    background-color: cornflowerblue;
+    background-color: lightpink;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -19,7 +19,7 @@ footer{
     padding:20px;
 }
 li{
-    background-color: cornflowerblue;
+    background-color: lightpink;
     color: white;
     max-width: fit-content;
     padding: 2px;
@@ -36,7 +36,7 @@ img{
     width: 100%;
 }
 li:hover{
-    background-color:rgb(69, 113, 193);
+    background-color:rgb(247, 139, 155);
 }
 #rubrik{
     text-align: center;

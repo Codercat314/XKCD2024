@@ -19,13 +19,16 @@ window.onload = function(){
         
     })
     document.getElementById('prev').addEventListener('click',function(){
-        
-        getComic(currentComic-1);
+        if(currentComic!=1){
+            getComic(currentComic-1);
+            
+        }
     
     })
     document.getElementById('next').addEventListener('click',function(){
-            
-        getComic(currentComic + 1);
+        if(currentComic!=maxComic){
+            getComic(currentComic + 1);
+        }
 
     })
     document.getElementById('last').addEventListener('click',function(){
@@ -69,8 +72,14 @@ function appendComic(data){
     img.alt = data.alt;
     console.log(data.img);
     img.src = data.img;
-    document.getElementById("linkTo").innerHTML = data.img;
+    //let datum = new date(data.year, data.month, data.day);
+    const d = new Date(data.year, data.month-1, data.day);
+
+    document.getElementById("linkTo").innerHTML = data.alt;
     document.getElementById("rubrik").innerHTML = data.title;
+    document.getElementById("comicnum").innerHTML = data.num;
+    document.getElementById("date").innerHTML = d.toDateString();
+
     
 }
 
